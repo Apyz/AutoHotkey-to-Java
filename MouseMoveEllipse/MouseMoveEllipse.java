@@ -43,6 +43,10 @@ import java.util.regex.Pattern;
 
 public class MouseMoveEllipse {
 
+    public static void init(int posX1, int posY1) throws Exception {
+        init(posX1, posY1, "");
+    }
+
     public static void init(int posX1, int posY1, String paramOptions) throws Exception{
         Robot robot;
 
@@ -118,7 +122,7 @@ public class MouseMoveEllipse {
                 robot = new Robot();
                 robot.mouseMove(locX, locY);
 
-                Thread.sleep(10); // or else it will go REALLY fast
+                Thread.sleep(3); // or else it will go REALLY fast
             }
         } else { // If distance from pos_Y0 to pos_Y1 is greater then pos_X0 to pos_X1
             locMultY = (posY[0] < posY[1]) ? 1 : (-1);
@@ -131,7 +135,7 @@ public class MouseMoveEllipse {
                 robot = new Robot();
                 robot.mouseMove(locX, locY);
 
-                Thread.sleep(10); // or else it will go REALLY fast
+                Thread.sleep(3); // or else it will go REALLY fast
             }
         }
 
