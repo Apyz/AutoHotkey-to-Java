@@ -6,23 +6,23 @@ I ported the code almost exactly how it was made (at least all the logic), inclu
 [The original code can be found here](https://github.com/MasterFocus/AutoHotkey/tree/master/Functions/MouseMove_Ellipse).
 
 ## Usage
-```pos_X1, pos_Y1 [, param_Options]```
+```posX1, posY1 [, paramOptions]```
 
 #### Required Parameters
 | Name | Description |
 | :--- | :--- |
-| pos_X1, pos_Y1 | Destination coordinates |
+| posX1, posY1 | Destination coordinates |
 
 #### Optional Parameters
 | Name | Description | Default |
 | :--- | :--- | :--- |
-| param_Options | String of options (see below) | blank |
+| paramOptions | String of options (see below) | blank |
 
-The *param_Options* string may contain multiple options:
+The *paramOptions* string may contain multiple options:
 
 | Option | Description | Behaviour when not present in *param_Options* |
 | :--- | :--- | :--- |
-| "B" | Block mouse input while it's moving | Doesn't block by default |
+| ~~"B"~~ | ~~Block mouse input while it's moving~~ | ~~Doesn't block by default~~ |
 | "i<b>0</b>" or "i<b>1</b>" | Clockwise "i<b>0</b>" or counterclockwise ("i<b>1</b>") movement | Random by default |
 | "R" | Indicates that the destination coordinates should be relative | Not relative by default |
 | "S<b>{number}</b>" | Movement speed (from 0 exclusive to 1 inclusive) | Defaults to 1 |
